@@ -1,0 +1,13 @@
+.header-hero{
+	// background:  url("../img/hero1.jpg") no-repeat center/cover ;
+	background:linear-gradient(rgba(27, 106, 146, 0.5), rgba(25, 25, 25, 0.31)),url(../img/hero2.jpg) center center/cover;
+    height:100vh;
+    display: table;
+    width: 100%;
+	&-inner{
+		display: table-cell;
+	    vertical-align: middle;
+	    margin: 0 auto;
+	    text-align: center;
+	}
+}

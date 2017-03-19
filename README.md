@@ -1,0 +1,1 @@
+# This is Triz-X theme

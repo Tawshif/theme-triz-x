@@ -1,0 +1,54 @@
+/*
+
+	2)- Navbar
+
+*/
+
+.main-nav{
+    position: fixed;
+	background: transparent;
+    padding: 25px 0;
+    width: 100%;
+    height: 100px;
+    border: none;
+    -webkit-transition: all 0.8s ease;
+    transition: all 0.8s ease;
+    color: $white;
+    &.navbar-inverse {
+        border-color: transparent;
+
+    }
+    .navbar-brand{
+        img{
+            max-height: 25px;
+        }
+    }
+    .navbar-collapse{
+
+    }
+    .navbar-nav{
+        .nav-link{
+            font-size:1.25rem;
+            &.active{
+                color: $red;
+            }
+        }
+    }
+
+    &.sticky-top{
+        background: $white;
+        padding: 15px 0;
+        height: auto;
+        box-shadow: 0px 0px 5px 1px rgba(193, 193, 193, 0.3);
+        .navbar-nav{
+
+            .nav-link{
+                color: #525252;
+                &.active{
+                    color: $red;
+                }
+            }
+        }
+    }
+
+}

@@ -1,0 +1,63 @@
+@font-face {
+  font-family: Graphik;
+  src: url(../fonts/Graphik-Semibold-Web.eot);
+  src: url(../fonts/Graphik-Semibold-Web.eot?#iefix) format("embedded-opentype"),
+       url(../fonts/Graphik-Semibold-Web.woff) format("woff"),
+       url(../fonts/Graphik-Semibold-Web.ttf) format("truetype"),
+       url(../fonts/Graphik-Semibold-Web.svg#Graphik-Semibold) format("svg");
+  font-weight: 700;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal
+}
+
+@font-face {
+  font-family: Graphik;
+  src: url(../fonts/Graphik-Regular-Web.eot);
+  src: url(../fonts/Graphik-Regular-Web.eot?#iefix) format("embedded-opentype"),
+       url(../fonts/Graphik-Regular-Web.woff) format("woff"),
+       url(../fonts/Graphik-Regular-Web.ttf) format("truetype"),
+       url(../fonts/Graphik-Regular-Web.svg#Graphik-Regular) format("svg");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal
+}
+
+// @font-face {
+//   font-family: 'Basis Grotesque Mono';
+//   font-weight: 400;
+//   font-style: normal;
+//   src: url(../fonts/basis-grotesque-mono.eot);
+//   src: url(../fonts/basis-grotesque-mono.eot?#iefix) format('embedded-opentype'),
+//       url(../fonts/basis-grotesque-mono.woff) format('woff'),
+//       url(../fonts/basis-grotesque-mono.woff2) format('woff2'),
+//       url(../fonts/basis-grotesque-mono.ttf) format('truetype');
+// }
+
+// @font-face {
+//   font-family: 'Basis Grotesque Mono';
+//   font-weight: 700;
+//   font-style: normal;
+//   src: url(../fonts/basis-grotesque-monobold.eot);
+//   src: url(../fonts/basis-grotesque-monobold.eot?#iefix) format('embedded-opentype'),
+//       url(../fonts/basis-grotesque-monobold.woff) format('woff'),
+//       url(../fonts/basis-grotesque-monobold.woff2) format('woff2'),
+//       url(../fonts/basis-grotesque-monobold.ttf) format('truetype');
+// }
+
+
+html,
+body {
+  box-sizing: border-box;
+  font-family: Graphik,"Helvetica Neue",sans-serif;
+  // font-family: "Basis Grotesque Mono", Monaco, "Lucida Console", monospace;
+  font-weight: 400;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-variant-ligatures: common-ligatures;
+  font-variant-ligatures: common-ligatures;
+  font-size: 14px;
+}
