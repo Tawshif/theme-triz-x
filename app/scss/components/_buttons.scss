@@ -1,0 +1,66 @@
+.btn-primary-custom {
+    background: $red;
+    color: $white;
+    border: none;
+    &:focus,
+    &:hover {
+        border: none;
+        box-shadow: none;
+    }
+}
+
+.btn-outline-primary-custom {
+    background: transparent;
+    color: $red;
+    border: 2px solid $red;
+    &:focus,
+    &:hover {
+        box-shadow: none;
+    }
+}
+
+.btn-secondary-custom {
+    background: #213742;
+    color: $white;
+    &:focus,
+    &:hover {
+        border: none;
+        box-shadow: none;
+    }
+}
+
+.btn-outline-secondary-custom {
+    background: transparent;
+    color: #213742;
+    ;
+    border: 2px solid #213742;
+    &:focus,
+    &:hover {
+        box-shadow: none;
+    }
+}
+
+.owl-carousel {
+    .owl-item {
+        padding: 20px;
+        display: block;
+        img {
+            max-width: 100%;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba($black, 0.2);
+        }
+    }
+    .owl-pagination {
+        .owl-page {
+            span {
+                width: 30px;
+                height: 4px;
+            }
+            &.active {
+                span {
+                    background: $red;
+                }
+            }
+        }
+    }
+}

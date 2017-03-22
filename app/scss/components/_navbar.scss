@@ -1,54 +1,58 @@
-/*
+/****************
+* 2. Navbar     *
+****************/
 
-	2)- Navbar
-
-*/
-
-.main-nav{
+.main-nav {
     position: fixed;
-	background: transparent;
-    padding: 25px 0;
     width: 100%;
     height: 100px;
-    border: none;
-    -webkit-transition: all 0.8s ease;
-    transition: all 0.8s ease;
+    padding: 25px 0;
+    transition: all .8s ease;
     color: $white;
+    border: none;
+    background: transparent;
     &.navbar-inverse {
         border-color: transparent;
-
     }
-    .navbar-brand{
-        img{
+    .navbar-brand {
+        img {
             max-height: 25px;
         }
     }
-    .navbar-collapse{
+    .navbar-nav {
+        .nav-link {
+            font-size: 1.25rem;
+            &.active {
+                // color: $red;
+                color: rgb(236, 59, 54);
 
-    }
-    .navbar-nav{
-        .nav-link{
-            font-size:1.25rem;
-            &.active{
-                color: $red;
+                // color: #ec3b36; for mobile
+                // border-left: 2px solid;
+                // padding-left: 20px;
+                // background: linear-gradient(to right, rgb(247, 245, 241), rgba(236, 59, 54, 0.21));
+
+                // border-bottom: 2px solid; for desktop
+                // background: linear-gradient(to top, rgba(247, 245, 241, 0), rgba(236, 59, 54, 0.05));
+                // transition: all 0.5s ease-in-out;
             }
         }
     }
-
-    &.sticky-top{
-        background: $white;
-        padding: 15px 0;
+    &.sticky-top {
         height: auto;
-        box-shadow: 0px 0px 5px 1px rgba(193, 193, 193, 0.3);
-        .navbar-nav{
-
-            .nav-link{
+        padding: 15px 0;
+        background: #f7f5f1;
+        box-shadow: 0 0 3px 1px rgba(113, 113, 113, .33);
+        .navbar-nav {
+            .nav-link {
                 color: #525252;
-                &.active{
-                    color: $red;
+                &.active {
+                    // color: $red;
+                    color: rgb(236, 59, 54);
                 }
             }
+            .btn-outline-secondary{
+                @include button-outline-variant($btn-danger-bg);
+            }
         }
     }
-
 }

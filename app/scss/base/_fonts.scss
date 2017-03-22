@@ -1,3 +1,8 @@
+@mixin font-size($sizeValue: 1.6) {
+  font-size: ($sizeValue * 10) + px;
+  font-size: $sizeValue + rem;
+}
+
 @font-face {
   font-family: Graphik;
   src: url(../fonts/Graphik-Semibold-Web.eot);
@@ -23,34 +28,10 @@
   font-stretch: normal
 }
 
-// @font-face {
-//   font-family: 'Basis Grotesque Mono';
-//   font-weight: 400;
-//   font-style: normal;
-//   src: url(../fonts/basis-grotesque-mono.eot);
-//   src: url(../fonts/basis-grotesque-mono.eot?#iefix) format('embedded-opentype'),
-//       url(../fonts/basis-grotesque-mono.woff) format('woff'),
-//       url(../fonts/basis-grotesque-mono.woff2) format('woff2'),
-//       url(../fonts/basis-grotesque-mono.ttf) format('truetype');
-// }
-
-// @font-face {
-//   font-family: 'Basis Grotesque Mono';
-//   font-weight: 700;
-//   font-style: normal;
-//   src: url(../fonts/basis-grotesque-monobold.eot);
-//   src: url(../fonts/basis-grotesque-monobold.eot?#iefix) format('embedded-opentype'),
-//       url(../fonts/basis-grotesque-monobold.woff) format('woff'),
-//       url(../fonts/basis-grotesque-monobold.woff2) format('woff2'),
-//       url(../fonts/basis-grotesque-monobold.ttf) format('truetype');
-// }
-
-
 html,
 body {
   box-sizing: border-box;
   font-family: Graphik,"Helvetica Neue",sans-serif;
-  // font-family: "Basis Grotesque Mono", Monaco, "Lucida Console", monospace;
   font-weight: 400;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
