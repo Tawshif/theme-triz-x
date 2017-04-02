@@ -1,0 +1,28 @@
+// $color-feature-title:#391044;
+$color-feature-title:#fe2b58;
+.features {
+    padding: 100px 0px;
+	&-title{
+		font-size: 3rem;
+		margin-bottom:35px;
+		color: $color-feature-title;
+	}
+	&-subtitle{
+		font-size: 1.1rem;
+		margin: 25px 0;
+
+	}
+    &-item{
+    	margin-bottom: 60px;
+    	img{
+    		width: 100%;
+    		padding: 0.5rem;
+    	}
+		h4{
+			font-weight: 400;
+			color: $color-feature-title;
+			margin-bottom: 1rem;
+		}
+    }
+
+}

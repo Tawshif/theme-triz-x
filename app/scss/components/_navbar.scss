@@ -1,9 +1,10 @@
 /****************
-* 2. Navbar     *
+* 1. Navbar    *
 ****************/
 
 .main-nav {
     position: fixed;
+    z-index: 20;
     width: 100%;
     height: 100px;
     padding: 25px 0;
@@ -15,25 +16,37 @@
         border-color: transparent;
     }
     .navbar-brand {
+        padding-top: 0;
         img {
             max-height: 25px;
         }
     }
+    .navbar-toggler {
+        right: 0;
+        top: 2px;
+        padding: 5px 10px;
+        border-color: rgb(255, 255, 255);
+    }
     .navbar-nav {
         .nav-link {
-            font-size: 1.25rem;
+            font-size: 1rem;
             &.active {
                 // color: $red;
                 color: rgb(236, 59, 54);
-
                 // color: #ec3b36; for mobile
                 // border-left: 2px solid;
                 // padding-left: 20px;
                 // background: linear-gradient(to right, rgb(247, 245, 241), rgba(236, 59, 54, 0.21));
-
                 // border-bottom: 2px solid; for desktop
                 // background: linear-gradient(to top, rgba(247, 245, 241, 0), rgba(236, 59, 54, 0.05));
                 // transition: all 0.5s ease-in-out;
+            }
+        }
+        .btn-outline-secondary {
+            font-size:1rem;
+            font-weight: 300;
+            &:hover {
+                @include button-outline-variant($btn-danger-bg);
             }
         }
     }
@@ -46,11 +59,10 @@
             .nav-link {
                 color: #525252;
                 &.active {
-                    // color: $red;
                     color: rgb(236, 59, 54);
                 }
             }
-            .btn-outline-secondary{
+            .btn-outline-secondary {
                 @include button-outline-variant($btn-danger-bg);
             }
         }

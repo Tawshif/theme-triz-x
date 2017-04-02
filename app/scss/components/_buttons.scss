@@ -10,12 +10,16 @@
 }
 
 .btn-outline-primary-custom {
-    background: transparent;
-    color: $red;
-    border: 2px solid $red;
+    // background: $white;
+    // color: $red;
+    background:$red;
+    color:$white;
     &:focus,
     &:hover {
-        box-shadow: none;
+        // background: $red;
+        // color:$white;
+        background: $white;
+        color:$red;
     }
 }
 
@@ -25,18 +29,18 @@
     &:focus,
     &:hover {
         border: none;
-        box-shadow: none;
     }
 }
 
 .btn-outline-secondary-custom {
     background: transparent;
     color: #213742;
-    ;
-    border: 2px solid #213742;
+    background: $white;
     &:focus,
     &:hover {
         box-shadow: none;
+        background: #213742;
+        color: $white;
     }
 }
 

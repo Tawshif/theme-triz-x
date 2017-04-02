@@ -2,28 +2,38 @@
   font-size: ($sizeValue * 10) + px;
   font-size: $sizeValue + rem;
 }
-
+// @import url('https://fonts.googleapis.com/css?family=Assistant');
 @font-face {
   font-family: Graphik;
-  src: url(../fonts/Graphik-Semibold-Web.eot);
-  src: url(../fonts/Graphik-Semibold-Web.eot?#iefix) format("embedded-opentype"),
-       url(../fonts/Graphik-Semibold-Web.woff) format("woff"),
-       url(../fonts/Graphik-Semibold-Web.ttf) format("truetype"),
-       url(../fonts/Graphik-Semibold-Web.svg#Graphik-Semibold) format("svg");
-  font-weight: 700;
-  font-weight: 600;
+  src: url(../fonts/Roboto-Light.eot);
+  src: url(../fonts/Roboto-Light.eot?#iefix) format("embedded-opentype"),
+       url(../fonts/Roboto-Light.woff) format("woff"),
+       url(../fonts/Roboto-Light.ttf) format("truetype"),
+       url(../fonts/Roboto-Light.svg#Graphik-Semibold) format("svg");
+  font-weight: 300;
   font-style: normal;
   font-stretch: normal
 }
 
 @font-face {
   font-family: Graphik;
-  src: url(../fonts/Graphik-Regular-Web.eot);
-  src: url(../fonts/Graphik-Regular-Web.eot?#iefix) format("embedded-opentype"),
-       url(../fonts/Graphik-Regular-Web.woff) format("woff"),
-       url(../fonts/Graphik-Regular-Web.ttf) format("truetype"),
-       url(../fonts/Graphik-Regular-Web.svg#Graphik-Regular) format("svg");
+  src: url(../fonts/Roboto-Regular-Web.eot);
+  src: url(../fonts/Roboto-Regular-Web.eot?#iefix) format("embedded-opentype"),
+       url(../fonts/Roboto-Regular-Web.woff) format("woff"),
+       url(../fonts/Roboto-Regular-Web.ttf) format("truetype"),
+       url(../fonts/Roboto-Regular-Web.svg#Graphik-Regular) format("svg");
   font-weight: 400;
+  font-style: normal;
+  font-stretch: normal
+}
+@font-face {
+  font-family: Graphik;
+  src: url(../fonts/Roboto-Bold-Web.eot);
+  src: url(../fonts/Roboto-Bold-Web.eot?#iefix) format("embedded-opentype"),
+       url(../fonts/Roboto-Bold-Web.woff) format("woff"),
+       url(../fonts/Roboto-Bold-Web.ttf) format("truetype"),
+       url(../fonts/Roboto-Bold-Web.svg#Graphik-Regular) format("svg");
+  font-weight: 700;
   font-style: normal;
   font-stretch: normal
 }
@@ -31,8 +41,8 @@
 html,
 body {
   box-sizing: border-box;
-  font-family: Graphik,"Helvetica Neue",sans-serif;
-  font-weight: 400;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -ms-text-size-adjust: 100%;
@@ -40,5 +50,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-variant-ligatures: common-ligatures;
   font-variant-ligatures: common-ligatures;
-  font-size: 14px;
+  font-size: 16px;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-weight: 300;
 }
