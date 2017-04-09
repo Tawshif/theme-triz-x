@@ -44,27 +44,3 @@
     }
 }
 
-.owl-carousel {
-    .owl-item {
-        padding: 20px;
-        display: block;
-        img {
-            max-width: 100%;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba($black, 0.2);
-        }
-    }
-    .owl-pagination {
-        .owl-page {
-            span {
-                width: 30px;
-                height: 4px;
-            }
-            &.active {
-                span {
-                    background: $red;
-                }
-            }
-        }
-    }
-}

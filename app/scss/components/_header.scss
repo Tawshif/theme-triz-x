@@ -18,6 +18,11 @@
 	    h1{
 	    	font-weight: 300;
 	    }
+	    h5{
+	    	// @include media-breakpoint-down(xs) {
+	    	// 	font-size: 1rem;
+	    	// }
+	    }
 	}
 	&:after {
 	    content: "";

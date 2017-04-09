@@ -1,28 +1,173 @@
-// $color-feature-title:#391044;
-$color-feature-title:#fe2b58;
+$color-feature-title: #fe2b58;
 .features {
-    padding: 100px 0px;
-	&-title{
-		font-size: 3rem;
-		margin-bottom:35px;
-		color: $color-feature-title;
-	}
-	&-subtitle{
-		font-size: 1.1rem;
-		margin: 25px 0;
-
-	}
-    &-item{
-    	margin-bottom: 60px;
-    	img{
-    		width: 100%;
-    		padding: 0.5rem;
-    	}
-		h4{
-			font-weight: 400;
-			color: $color-feature-title;
-			margin-bottom: 1rem;
-		}
+    padding: 100px 0 50px;
+    @include media-breakpoint-down(xs) {
+        padding: 30px 0;
     }
+    &-title {
+        font-size: 3rem;
+        margin-bottom: 35px;
+        color: $color-feature-title;
+        @include media-breakpoint-down(xs) {
+            font-size: 2rem;
+            margin-bottom: 25px;
+        }
+    }
+    &-subtitle {
+        font-size: 1.1rem;
+        margin-bottom: 25px;
+        @include media-breakpoint-down(xs) {
+            margin-bottom: 30px;
+        }
+    }
+    &-item {
+        margin-bottom: 60px;
+        @include media-breakpoint-down(xs) {
+            margin-bottom: 15px;
+            ;
+        }
+        .features-icon {
+            display: flex;
+            height: 100%;
+            justify-content: center;
+            .lnr {
+                font-size: 4rem;
+                color: $color-feature-title;
+                align-self: center;
+                @include media-breakpoint-down(xs) {
+                    font-size: 3rem;
+                }
+            }
+        }
+        h4 {
+            font-weight: 400;
+            margin-bottom: 1rem;
+            color: $text-color;
+            @include media-breakpoint-down(xs) {
+                font-size: 1.25rem;
+            }
+        }
+        p {
+            margin-bottom: 0;
+            @include media-breakpoint-down(xs) {
+                font-size: 1rem;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+}
 
+.screenshots {
+    padding: 100px 0;
+    background: #edf0f3;
+    &-title {
+        font-size: 3rem;
+        margin-bottom: 35px;
+        color: $text-color;
+        @include media-breakpoint-down(xs) {
+            font-size: 2rem;
+            margin-bottom: 25px;
+        }
+    }
+    .owl-carousel {
+        .owl-item {
+            display: block;
+            padding: 20px;
+            img {
+                max-width: 100%;
+                border-radius: 5px;
+                box-shadow: 0 0 10px rgba($black, .2);
+                &:hover {
+                    cursor: pointer;
+                    box-shadow: 0 0 10px rgba($black, .5);
+                }
+            }
+        }
+        .owl-pagination {
+            .owl-page {
+                span {
+                    width: 30px;
+                    height: 4px;
+                }
+                &.active {
+                    span {
+                        background: $red;
+                    }
+                }
+            }
+        }
+    }
+}
+
+$trialbg-color: #3a1145;
+.free-trial {
+    padding: 50px 0 35px;
+    color: white;
+    background: $trialbg-color;
+    @include media-breakpoint-down(md) {
+        padding: 50px 0 60px;
+    }
+    @include media-breakpoint-down(sm) {
+        padding: 50px 0 70px;
+        text-align: center;
+    }
+    &-title {
+        font-size: 3rem;
+        line-height: 45px;
+        @include media-breakpoint-down(sm) {
+            font-size: 2rem;
+            line-height: 1;
+            margin-bottom: 45px;
+        }
+    }
+    &-form {
+        .input-group {
+            @include media-breakpoint-down(sm) {
+                flex-wrap: wrap;
+            }
+            .form-control {
+                color: $white;
+                border: none;
+                outline: none;
+                background: lighten($trialbg-color, 5);
+                @include media-breakpoint-down(sm) {
+                    font-size: 1rem;
+                    width: 100%;
+                    margin-bottom: 1rem;
+                    border-radius: .3rem;
+                }
+                &:focus,
+                &:hover {
+                    border: none;
+                    outline: none;
+                    background: lighten($trialbg-color, 10);
+                }
+            }
+            &-btn {
+                @include media-breakpoint-down(sm) {
+                    flex: 0 0 100%;
+                }
+                .btn {
+                    font-weight: 300;
+                    margin: 0;
+                    cursor: pointer;
+                    color: $trialbg-color;
+                    @include media-breakpoint-down(sm) {
+                        display: block;
+                        width: 100%;
+                        border-radius: .3rem;
+                    }
+                }
+            }
+        }
+        p {
+            font-size: .8rem;
+            position: relative;
+            top: 10px;
+            margin-bottom: 0;
+            a {
+                color: #fff;
+            }
+        }
+    }
 }
