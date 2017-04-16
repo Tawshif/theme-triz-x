@@ -1,12 +1,12 @@
 $color-feature-title: #fe2b58;
 .features {
-    padding: 100px 0 50px;
+    padding: 80px 0 50px;
     @include media-breakpoint-down(xs) {
         padding: 30px 0;
     }
     &-title {
         font-size: 3rem;
-        margin-bottom: 35px;
+        margin-bottom: 50px;
         color: $color-feature-title;
         @include media-breakpoint-down(xs) {
             font-size: 2rem;
@@ -58,11 +58,11 @@ $color-feature-title: #fe2b58;
 }
 
 .screenshots {
-    padding: 100px 0;
+    padding: 80px 0;
     background: #edf0f3;
     &-title {
         font-size: 3rem;
-        margin-bottom: 35px;
+        margin-bottom: 40px;
         color: $text-color;
         @include media-breakpoint-down(xs) {
             font-size: 2rem;
