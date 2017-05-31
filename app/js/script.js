@@ -18,7 +18,7 @@ Table of content:
 
 $(document).ready(function () {
   $("#testimonials .owl-carousel").owlCarousel({
-    items: 2,
+    items: 1,
     lazyLoad: true,
     dots: true,
     margin: 30,
